@@ -19,13 +19,18 @@ To make predictions more realistic, especially in **premium areas like Banjara H
 
 - If the model predicts **very low price per square foot**, a **correction is applied** based on BHK
 - Example:
-  - 1 BHK minimum = ₹8,000/sqft  
-  - 2 BHK minimum = ₹10,000/sqft  
-  - 3+ BHK minimum = ₹12,000/sqft  
+  - 1 BHK minimum = ₹15,000/sqft  
+  - 2 BHK minimum = ₹18,000/sqft  
+  - 3+ BHK minimum = ₹20,000/sqft  
 
 This makes sure the prices stay realistic and not undervalued for luxury areas.
 
 ---
+
+📈 Example Output
+💰 Estimated Price: ₹ 24,00,000
+📏 Price per Sqft: ₹ 12,000
+⚠️ Prediction adjusted due to premium locality
 
 ## 🛠 Tech Stack
 
