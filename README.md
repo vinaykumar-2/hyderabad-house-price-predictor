@@ -27,10 +27,10 @@ This makes sure the prices stay realistic and not undervalued for luxury areas.
 
 ---
 
-📈 Example Output
-💰 Estimated Price: ₹ 24,00,000
-📏 Price per Sqft: ₹ 12,000
-⚠️ Prediction adjusted due to premium locality
+📈 Example Output  
+💰 Estimated Price: ₹ 24,00,000  
+📏 Price per Sqft: ₹ 12,000  
+⚠️ Prediction adjusted due to premium locality  
 
 ## 🛠 Tech Stack
 
