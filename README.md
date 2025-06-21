@@ -52,7 +52,3 @@ This makes sure the prices stay realistic and not undervalued for luxury areas.
    ```bash
    pip install streamlit scikit-learn pandas numpy
 2. streamlit run app.py  
-
-🌐 Live App
-Click below to try the app online (no installation needed):
-🔗 Open App in Streamlit →  
