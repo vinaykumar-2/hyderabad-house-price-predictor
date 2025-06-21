@@ -81,14 +81,21 @@ if submit:
         #Validate square feet input
         if not area_sqft.strip():
             st.warning("⚠️ Please enter the square footage.")
+            st.stop()
         elif not area_sqft.strip().replace('.','',1).isdigit():
             st.warning("⚠️ Square footage must be a number.")
+            st.stop()
         elif float(area_sqft) < 200:
             st.warning("⚠️ Please enter at least 200 sqft — values below this are unrealistic.")
+            st.stop()
 
         else:
             #Convert sqft to float
             area_val = float(area_sqft)
+            #warn if small but valid
+            if area_val < 400:
+                st.warning("⚠️ Note: Small house sizes may show high price per sqft due to low area.")
+
             input_data= np.array([prepare_input(
                 area_sqft,bhk,brand_new,locality,property_type,
                 furnished_status,user_type)
