@@ -79,8 +79,13 @@ def prepare_input(area_sqft,bhk,brand_new,locality,property_type,furnished_statu
 if submit:
     try:
         #Validate square feet input
-        if not area_sqft.strip() or not area_sqft.strip().isdigit():
-            st.warning("⚠️ Please enter a valid numeric square footage.")
+        if not area_sqft.strip():
+            st.warning("⚠️ Please enter the square footage.")
+        elif not area_sqft.strip().replace('.','',1).isdigit():
+            st.warning("⚠️ Square footage must be a number.")
+        elif float(area_sqft) < 200:
+            st.warning("⚠️ Please enter at least 200 sqft — values below this are unrealistic.")
+
         else:
             #Convert sqft to float
             area_val = float(area_sqft)
